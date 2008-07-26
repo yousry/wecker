@@ -1,6 +1,6 @@
 /**
- * Small java desktop application for time 	stabilisation.
- * LGPL (c)2007 Yousry Abdallah
+ * Small application For regular work breaks.
+ * GPL (c)2007 Yousry Abdallah
  */
 package wecker;
 

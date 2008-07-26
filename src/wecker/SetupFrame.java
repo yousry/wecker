@@ -1,5 +1,6 @@
 /**
- * 
+ * Small application For regular work breaks.
+ * GPL (c)2007 Yousry Abdallah
  */
 package wecker;
 
@@ -9,27 +10,28 @@ import javax.swing.JFrame;
 
 /**
  * @author yousry
- *
+ * 
  */
 public class SetupFrame extends JFrame {
-	
+
 	static private SetupFrame setupFrame;
-	
+
 	static SetupFrame getSetupFrame() {
 		return setupFrame;
 	}
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 7788366063224510908L;
-	
+
 	public SetupFrame() {
 		super();
-		
+
 		setupFrame = this;
-		
-		Image image = java.awt.Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/teacupTray.gif"));
+
+		Image image = java.awt.Toolkit.getDefaultToolkit().getImage(
+				this.getClass().getResource("/teacupTray.gif"));
 		setIconImage(image);
 
 		setTitle("Wecker Setup");
@@ -40,5 +42,5 @@ public class SetupFrame extends JFrame {
 		getContentPane().add(setupPanel);
 		pack();
 	}
-	
+
 }
